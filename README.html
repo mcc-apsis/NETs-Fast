@@ -137,7 +137,7 @@ $(document).ready(function () {
 <ul>
 <li><code>project_setup.R</code> installs all necessary packages (in the versions current at the time of writing this paper) - This may take some time…</li>
 <li><code>topic_model.R</code> reads the abstracts, runs a topic model and saves the results in <code>output/LDA_19_098</code></li>
-<li>The file <code>output/LDA_19_098/index.html</code> is a mini-site which allows you to explore the topics. This is used to inform the topic naming - to do this, add an extra column in <code>òutput/LDA_19_098/LDA_19_098_topic_terms.csv</code> and name the topics in this column</li>
+<li>The file <code>output/LDA_19_098/index.html</code> is a mini-site which allows you to explore the topics. This is used to inform the topic naming - to do this, add an extra column in <code>output/LDA_19_098/LDA_19_098_topic_terms.csv</code> and name the topics in this column</li>
 <li><code>post_topic_model</code> reads the new topic names, and calculates correlation networks in <code>output/LDA_19_098/LDA_19_098_topic_correlations.graphml</code> and <code>output/LDA_19_098/LDA_19_098_document_correlations.graphml</code>. The topic correlations file was imported into gephi for aesthetic work to produce the final figure in the paper</li>
 <li><code>figures.R</code> produces Figure 2 in the paper</li>
 <li><code>growth.R</code> produces a table of growth by discipline in <code>discipline_growth.csv</code></li>
