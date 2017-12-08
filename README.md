@@ -22,7 +22,8 @@ run in the following order
 - `topic_model.R` reads the abstracts, runs a topic model and saves the results in 
  `output/LDA_19_098`
 - The file `output/LDA_19_098/index.html` is a mini-site which allows you to explore
- the topics. This is used to inform the topic naming - to do this, add an extra column
+ the topics. The online version in this repository is [here](https://mcc-apsis.github.io/NETs-Fast/output/LDA_19_098)
+ This is used to inform the topic naming - to do this, add an extra column
  in `output/LDA_19_098/LDA_19_098_topic_terms.csv` and name the topics in this column
 - `post_topic_model` reads the new topic names, and calculates correlation networks
  in `output/LDA_19_098/LDA_19_098_topic_correlations.graphml` and
