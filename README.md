@@ -1,5 +1,10 @@
 # NETs-Fast
-Repository for the paper: Fast Growing Literature on Negative Emissions
+Repository for the paper: 
+
+[Fast growing research on negative emissions](https://dx.doi.org/10.1088/1748-9326/aa5ee5)
+
+Jan C Minx William F Lamb Max W Callaghan Lutz Bornmann Sabine Fuss
+Environmental Research Letters vol. 12 issue 3 (2017) pp: 035007 https://dx.doi.org/10.1088/1748-9326/aa5ee5
 
 To reproduce the results in the paper, follow these steps.
 
