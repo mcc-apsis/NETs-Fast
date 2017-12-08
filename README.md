@@ -18,7 +18,7 @@ run in the following order
  `output/LDA_19_098`
 - The file `output/LDA_19_098/index.html` is a mini-site which allows you to explore
  the topics. This is used to inform the topic naming - to do this, add an extra column
- in `òutput/LDA_19_098/LDA_19_098_topic_terms.csv` and name the topics in this column
+ in `output/LDA_19_098/LDA_19_098_topic_terms.csv` and name the topics in this column
 - `post_topic_model` reads the new topic names, and calculates correlation networks
  in `output/LDA_19_098/LDA_19_098_topic_correlations.graphml` and
  `output/LDA_19_098/LDA_19_098_document_correlations.graphml`. The topic correlations
