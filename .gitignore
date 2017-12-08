@@ -35,3 +35,7 @@ vignettes/*.pdf
 
 # Wos files
 */queries/*/results.txt
+*papers.RData
+
+# R packages
+scripts/R/pkgs/*
