@@ -146,3 +146,29 @@ docCors <- function(papers,model) {
   # )
   return(g)
 }
+
+topCors <- function(model, topic_names = FALSE) {
+  gamma <- as.data.frame(model@gamma)
+  if (topic_names==FALSE) {
+    topic_names <- paste0("{",terms(model,10)[1,],", ",terms(model,10)[2,],", ",terms(model,10)[3,],"}")
+  }
+
+  names(gamma) <- topic_names
+  cors <- cor(gamma[,])
+  cors[lower.tri(cors,diag=TRUE)] <- 0
+  cors[cors < 0] <- 0
+  colnames(cors) <- topic_names
+
+  g <- as.undirected(graph.adjacency(
+    cors,weighted=TRUE,mode="upper"
+  ))
+
+  layout1 <- layout.fruchterman.reingold(g, niter=500)
+
+  b1 <- degree(g)
+
+  V(g)$label.cex <-  b1 * 2  / max(b1) # label text size
+  V(g)$size <-  b1 * 30 / max(b1)        # node size
+
+  return(g)
+}
